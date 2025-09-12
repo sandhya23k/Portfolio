@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-//import emotion from "../../Assets/Projects/emotion.png";
-
-import ExpenseCalculator from "../../Assets/Projects/ExpenseCalculator.png";
+import xv6 from "../../Assets/Projects/xv6.png";
+import states from "../../Assets/Projects/states.jpeg";
+import expenses from "../../Assets/Projects/Expenses.jpg";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import foon from "../../Assets/Projects/FOON.png";
 
 function Projects() {
   return (
@@ -23,7 +22,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={ExpenseCalculator}
+              imgPath={expenses}
               isBlog={false}
               title="Expense Calculator"
               description="Expense Calculator to Add/Delete/Edit Expenses, to keep track of montly expenses of an Individual. Built using .Net MVC, Entity Framework."
@@ -33,7 +32,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={states}
               isBlog={false}
               title="State Object Recognition"
               description="This project focuses on fine-grained object state recognition, which is crucial for robotic cooking. Unlike object recognition, which identifies the type of object, state recognition classifies the state of the object (e.g., whole, sliced, chopped). The goal is to enable robots to perform manipulation tasks accurately by recognizing the state of cooking objects."
@@ -44,7 +43,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={foon}
               isBlog={false}
               title="AI Knowledge Retreival"
               description="This project implements task planning for robotic cooking using a Functional Object-Oriented Network (FOON).  It generates sequences of actions (task trees) to achieve a cooking goal based on the current kitchen state."
@@ -55,12 +54,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={xv6}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="OS Linux Commands on xv6 OS"
+              description="Developed Linux Commands at Kernel Level and user level on xv6 and Implmented Scheduling Algorithms using Traditional C."
+              ghLink="https://github.com/sandhya23k/OS-Linux-commands"
             />
           </Col>
 
@@ -68,10 +66,10 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Graph Algorithms Implementation"
+              description="Implementing Graph Algorithms on a huge IMDB dataset as a part of academic project"
+              ghLink="https://github.com/sandhya23k/Graph-Algorithms"
+                    // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
